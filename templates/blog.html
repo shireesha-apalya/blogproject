@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Restaurant - blog{% endblock %}
+
+{% block content %}
+       <div class="starter-template">
+          <a href="">{{post.title}}</a>
+            <h4>{{post.id}}. {{post.title}}</h4>
+           <p class="lead">{{post.desc}}</p>
+          <img src="{{post.image.url}}" alt="image not found"/>
+           <hr>
+      </div>
+
+{% endblock %}

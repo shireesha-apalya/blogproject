@@ -12,8 +12,8 @@ class Contact(models.Model):
 
 class BlogPost(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    desc = models.CharField(max_length=2000)
     title = models.CharField(max_length=50)
+    desc = models.CharField(max_length=2000)
     image = models.ImageField(upload_to='images/', null=True)
     created_date = models.DateField(auto_now_add=True)
     updated_date = models.DateField(auto_now=True)

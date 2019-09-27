@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog_app'
+    'blog_app',
+    'rest_framework',
+    'blog_api'
 
     ]
 
@@ -78,10 +80,10 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'restaurantdb',
+        'NAME': 'restrodb',
         'USER': 'shireesha',
-        'PASSWORD': 'M@rtins18',
-        'HOST': 'localhost',
+        'PASSWORD': 'Siri@1998',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }
